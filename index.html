@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Media Query Demo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .box {
+      width: 30%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    /* 📱 Mobile screen (max width 768px) */
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .box {
+        width: 90%;
+        margin-bottom: 15px;
+        font-size: 18px;
+        background-color: #e3f2fd;
+      }
+
+      header {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Responsive Website Demo 🌐
+  </header>
+
+  <div class="content">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </div>
+</body>
+</html>
